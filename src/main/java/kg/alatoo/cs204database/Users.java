@@ -44,4 +44,24 @@ public class Users {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Override
+    public int hashCode() {
+        return name.hashCode() + email.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (((Users) obj).getName().equals(name))
+            return true;
+        else
+            return false;
+    }
+
+    @Override
+    public String toString() {
+        return name + ":" + email;
+    }
+
+
 }

@@ -12,7 +12,7 @@ public class UsersController {
 
     @PostMapping("/add")
     public @ResponseBody String addNewUser(@RequestBody Users user) {
-        usersRepository.save(user);
+        usersRepository.save(user); // insert into users values (name, email);
         return "OK";
     }
 
