@@ -27,4 +27,9 @@ public class Cs204databaseApplication {
         return "index";
     }
 
+    @GetMapping("/about")
+    public String aboutMe() {
+        return "about";
+    }
+
 }

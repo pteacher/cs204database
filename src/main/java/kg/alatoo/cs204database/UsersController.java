@@ -21,3 +21,7 @@ public class UsersController {
         return usersRepository.findAll();
     }
 }
+
+// To access data by REST api entry point is /users
+// To view all users you should access /users/all
+// To add user you should do a POST request to /users/add
